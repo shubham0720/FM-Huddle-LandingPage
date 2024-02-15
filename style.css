@@ -18,11 +18,15 @@ h1{
     font-family: "Poppins", sans-serif;
 }
 
+button{
+    cursor: pointer;
+}
+
 #header{
     padding: 40px 80px;
     background-image: url(images/bg-hero-desktop.svg);
     width: 100%;
-    height: 80vh;
+    height: 80%;
     background-color: hsl(193, 100%, 96%);
 }
 
@@ -58,12 +62,12 @@ h1{
     font-family: "Poppins", sans-serif;
     font-size: 28px;
     font-weight: 600;
-    width: 50%;
+    width: 65%;
 }
 
 #header .main-content .page-desc p{
     font-family: "Poppins", sans-serif;
-    width: 65%;
+    width: 80%;
     padding: 30px 0px;
 }
 
@@ -71,13 +75,12 @@ h1{
     background-color: hsl(322, 100%, 66%);
     color: white;
     border: none;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
     padding: 14px 64px;
     border-radius: 50px;
     font-family: "Open Sans", sans-serif;
     font-weight: 700;
     font-size: 12px;
-    box-shadow: 4px 3px 15px hsla(322, 100%, 66%, 0.4);
 }
 
 #header .main-content img{
@@ -86,9 +89,11 @@ h1{
 }
 
 #huddleprop{
-    padding: 80px 80px;
+    padding: 80px 0px;
     display: flex;
     justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 #huddleprop .prop-container{
@@ -97,7 +102,14 @@ h1{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.08);
+    padding-right: 80px;
+    margin: 20px;
+    border-radius: 10px;
+}
+
+#huddleprop .prop-container:nth-child(2){
+    padding-left: 100px;
 }
 
 #huddleprop .prop-container img{
@@ -110,6 +122,66 @@ h1{
     width: 100%;
 }
 
+#huddleprop .prop-container:nth-child(2) .prop-desc{
+    padding: 0px 0px;
+    width: 100%;
+    margin-left: 25%;
+}
+
+#huddleprop .prop-container .prop-desc h1{
+    font-weight: 600;
+}
+
 #huddleprop .prop-container .prop-desc p{
-    width: 350px;
+    width: 70%;
+    font-family: "Open Sans", sans-serif;
+    color: hsl(208, 11%, 55%);
+    padding-top: 14px;
+}
+
+#huddleprop .prop-container:nth-child(2) .prop-desc p{
+    width: 90%;
+}
+
+#footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(192, 100%, 9%);
+    margin-top: 150px;
+}
+
+#footer .get-started-container{
+    background-color: white;
+    width: 50vw;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.08);
+    border-radius: 10px;
+    transform: translateY(-100px);
+}
+
+#footer .get-started-container h1{
+    font-size: 28px;
+}
+
+#footer .get-started-container button{
+    margin-top: 20px;
+    background-color: hsl(322, 100%, 66%);
+    color: white;
+    border: none;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    padding: 18px 68px;
+    border-radius: 50px;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 700;
+    font-size: 12px;
+}
+
+#footer .website-details .company-details{
+    color: white;
 }
